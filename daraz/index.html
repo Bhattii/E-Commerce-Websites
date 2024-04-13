@@ -8,22 +8,57 @@
         href="//laz-img-cdn.alicdn.com/imgextra/i1/O1CN01V8uEDV1jdZ9U2wL90_!!6000000004571-73-tps-64-64.ico">
     <title>Daraz Online Shopping in Pakistan, Fashion, Electronics & Groceries - daraz.pk</title>
     <style>
+        body {
+            margin: 0;
+        }
+
         header {
             background-color: rgb(253, 111, 60);
+            height: 100px;
+
         }
 
         #top-header {
+
             display: flex;
             flex-direction: row;
+            position: relative;
+            margin: 0px 30px;
 
         }
 
         ul {
             display: flex;
             flex-direction: row;
+            list-style-type: none;
+            margin: 0;
+
         }
 
-        #mobile-app {}
+        li {
+            margin-top: 2px;
+            padding: 0 10px;
+            color: white;
+            font-size: small;
+        }
+
+
+        #mobile-app {
+            display: flex;
+            flex-direction: row;
+            font-size: small;
+            color: white;
+            margin-top: 0px;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 5px;
+            position: absolute;
+            right: 40px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        #logo-top {
+            margin-right: 5px;
+        }
     </style>
 
 </head>
@@ -39,13 +74,14 @@
             </ul>
 
             <div id='mobile-app'>
-                <img src="//img.alicdn.com/imgextra/i1/O1CN01Ie2YnK1JmZ1mL3fY5_!!6000000001071-2-tps-60-60.png" alt=""
-                    class="save-more-icon" data-spm-anchor-id="a2a0e.home.header.i3.35e340768JAPlg">
-                Save More on App
+                <img id='logo-top'
+                    src="//img.alicdn.com/imgextra/i1/O1CN01Ie2YnK1JmZ1mL3fY5_!!6000000001071-2-tps-60-60.png" alt=""
+                    class="save-more-icon" data-spm-anchor-id="a2a0e.home.header.i3.35e340768JAPlg" width='20px'
+                    height='20px'>
+                <div>Save More on App</div>
             </div>
         </div>
         <div id='bottom-header'>
-
         </div>
         <div></div>
         <div></div>
