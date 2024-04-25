@@ -216,7 +216,7 @@ p {
 
 /* ------------------------------ Service Session Start -------------------- */
 .service-description {
-    padding: 100px 50px;
+    padding: 100px 70px;
 
 }
 
@@ -232,4 +232,103 @@ p {
     padding-left: 0;
 }
 
-/* ------------------------------ Service Session End ---------------------- */
+.service-include {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.include-img img {
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+aside ul li {
+    color: var(--secondary-light);
+    font-weight: 900;
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid #939cad;
+    list-style-type: none;
+    position: relative;
+    z-index: -1;
+
+}
+
+
+aside ul li::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/icons8-checked-radio-button.gif');
+    background-size: cover;
+    margin-right: 10px;
+    position: absolute;
+    left: -45px;
+    top: 16px;
+
+}
+
+.benefits {
+    padding: 2% 5%;
+}
+
+.benefits h2 {
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 45px;
+
+}
+
+.benefits ul {
+
+    margin: 20px;
+}
+
+.benefits ul li {
+    padding: 1% 0;
+    list-style-type: square;
+
+}
+
+.benefits ul li::marker {
+    color: #0ebab1;
+    margin-right: 0;
+    margin-left: 1%;
+}
+
+.benefits ul li::before {
+    content: '';
+    list-style-type: square;
+}
+
+/* ------------------------------ Service Section End ---------------------- */
+
+/* ------------------------------ Background Working Process Section  Start -------------------- */
+
+.bg-working-container {
+    background-color: var(--secondary-dark);
+    background-image: url(img/background-working-process.svg);
+    display: flex;
+
+}
+
+.bg-working-title h2 {
+    color: var(--white);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------ Background Working Process Section  End ---------------------- */
