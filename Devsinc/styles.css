@@ -1,0 +1,235 @@
+:root {
+    --paragraph-gray: #7987a1;
+    --secondary-dark: #042638;
+    --primary: #0ebab1;
+    --light-gray: #fafafa;
+    --secondary-light: #0f5377;
+    --white: white;
+    --primary-light: rgba(14, 186, 177, .03);
+    --heading-dark: #042638;
+    --black: #171717;
+    --dark-gray-50: rgba(175, 175, 175, .5);
+    --heading-light: #e9e9e9;
+    --h2: 40px;
+    --white-50: rgba(255, 255, 255, .7);
+    --drk-grey: var(--dark-gray-50);
+    --transparent: rgba(14, 186, 177, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: var(--paragraph-gray); */
+    letter-spacing: -.05em;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+/* --------------------- Header Start ---------------------- */
+
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+
+}
+
+.nav-container {
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 0;
+    display: flex;
+}
+
+.nav-logo {
+
+    width: 110px;
+    height: 100%;
+
+
+}
+
+.nav-logo img {
+    width: 110px;
+    height: 100%;
+}
+
+.nav-menu ul {
+    display: flex;
+    column-gap: 40px;
+}
+
+.nav-menu ul li {
+    list-style: none;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: var(--secondary-dark);
+    font-size: 18px;
+    line-height: 1em;
+    transition: color .3s;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin: 10px;
+
+}
+
+.nav-menu ul li a:hover {
+    color: var(--primary);
+    opacity: 1;
+}
+
+.nav-dropdown ul {
+    position: absolute;
+    display: none;
+    background: var(--white);
+    border: 1px var(--drk-grey);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--dark-gray-50);
+    padding: 20px;
+}
+
+.nav-dropdown ul li {
+    transition: transform 0.7s;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+.nav-dropdown ul li a span {
+    visibility: hidden;
+    margin-right: 10px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.nav-dropdown ul li:hover span {
+    visibility: visible;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+.nav-dropdown ul li:hover {
+    transform: translateX(10px);
+
+}
+
+.nav-wraper {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    color: var(--white);
+
+}
+
+.nav-wraper a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-wraper i {
+    margin-left: 20px;
+    transform: rotate(45deg);
+    transition: transform 0.9s;
+}
+
+.nav-wraper:hover {
+    background-color: var(--secondary-dark);
+    color: white;
+}
+
+.nav-wraper:hover i {
+    transform: rotate(0deg);
+}
+
+/* -------------------------- Header End ------------------------------ */
+
+/* --------------------------Banner one Start -------------------------- */
+.banner-container {
+
+    background: radial-gradient(#064743 5%, #171717 95%);
+
+
+}
+
+.banner-header {
+    background-image: url(img/Banner1.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 150px;
+
+}
+
+.banner-container h1,
+p {
+    color: var(--white);
+    margin: 10px;
+    padding: 20px;
+
+}
+
+.banner-container h1 {
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.banner-container p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.banner-container p span {
+    display: block;
+}
+
+/* ------------------------------ Banner one End --------------------------- */
+
+/* ------------------------------ Service Session Start -------------------- */
+.service-description {
+    padding: 100px 50px;
+
+}
+
+.service-description h2 {
+    color: var(--h2);
+    font-size: 3rem;
+}
+
+.service-description p {
+    color: var(--paragraph-gray);
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-left: 0;
+}
+
+/* ------------------------------ Service Session End ---------------------- */
