@@ -23,7 +23,7 @@
 }
 
 body {
-    /* background-color: var(--paragraph-gray); */
+
     letter-spacing: -.05em;
     font-family: Inter, sans-serif;
     font-size: 16px;
@@ -44,6 +44,8 @@ header {
     bottom: auto;
     left: 0%;
     right: 0%;
+    z-index: 99;
+
 
 }
 
@@ -89,8 +91,7 @@ header {
     transition: color .3s;
     position: relative;
     display: inline-block;
-    margin-bottom: 10px;
-    margin: 10px;
+    padding: 10px 10px 20px 10px;
 
 }
 
@@ -141,7 +142,7 @@ ul li:hover ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 50px;
+    padding: 35px 50px;
     font-size: 18px;
     transition: background-color 0.3s;
     color: var(--white);
@@ -171,10 +172,9 @@ ul li:hover ul {
 /* -------------------------- Header End ------------------------------ */
 
 /* --------------------------Banner one Start -------------------------- */
+
 .banner-container {
-
     background: radial-gradient(#064743 5%, #171717 95%);
-
 
 }
 
@@ -189,6 +189,7 @@ ul li:hover ul {
     padding-bottom: 150px;
 
 }
+
 
 .banner-container h1,
 p {
@@ -216,7 +217,7 @@ p {
 
 /* ------------------------------ Service Session Start -------------------- */
 .service-description {
-    padding: 100px 50px;
+    padding: 100px 70px;
 
 }
 
@@ -232,4 +233,909 @@ p {
     padding-left: 0;
 }
 
-/* ------------------------------ Service Session End ---------------------- */
+.service-include {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.include-img img {
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+aside ul li {
+    color: var(--secondary-light);
+    font-weight: 900;
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid #939cad;
+    list-style-type: none;
+    position: relative;
+    z-index: -1;
+
+}
+
+
+aside ul li::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/icons8-checked-radio-button.gif');
+    background-size: cover;
+    margin-right: 10px;
+    position: absolute;
+    left: -45px;
+    top: 16px;
+
+}
+
+.benefits {
+    padding: 2% 5%;
+}
+
+.benefits h2 {
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 45px;
+
+}
+
+.benefits ul {
+
+    margin: 20px;
+}
+
+.benefits ul li {
+    padding: 1% 0;
+    list-style-type: square;
+
+}
+
+.benefits ul li::marker {
+    color: #0ebab1;
+    margin-right: 0;
+    margin-left: 1%;
+}
+
+.benefits ul li::before {
+    content: '';
+    list-style-type: square;
+}
+
+/* ------------------------------ Service Section End ---------------------- */
+
+/* ------------------------------ Background Working Process Section  Start -------------------- */
+.bg-working-process {
+    background-image: url(img/background-working-process.svg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.working-container {
+    background-color: var(--secondary-dark);
+    background: radial-gradient(circle at 80% 50%, #264b50 5%, #192727 95%);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+
+.working-title {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.working-title h2 {
+    color: var(--white);
+    font-size: 3rem;
+    padding-left: 27px;
+}
+
+.working-title p {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 60%;
+}
+
+.box-container {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bg-box {
+    width: 300px;
+    height: 300px;
+    color: white;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .03);
+    border: 1px solid rgba(255, 255, 255, .2);
+    margin: 20px;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.bg-box:nth-child(odd) {
+    position: relative;
+    bottom: 50px;
+    right: 30px;
+
+
+}
+
+.box h2 {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.box h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 24px 20px 0px 20px
+}
+
+.box p {
+    text-align: center;
+    font-weight: 500;
+
+}
+
+/* ------------------------------ Background Working Process Section  End ---------------------- */
+
+/* ----------------------------- Projects Section Start -------------------------- */
+.project-container {
+    display: flex;
+    margin-left: 100px;
+    margin: 50px;
+    /* z-index: -1; */
+}
+
+.project-work {
+    width: 370px;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.project-work h5 {
+    display: inline-block;
+    color: var(--secondary-dark);
+    border: 2px solid #0ebab1;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.project-work h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.project-view {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    display: inline-block;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 40px;
+    padding: 15px 20px;
+    margin-top: 35px;
+    color: var(--white);
+    transition: background 1s;
+    transition: color 1s;
+}
+
+.project-view a {
+
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.project-work i {
+    font-size: 8px;
+    margin-left: 50px;
+}
+
+.project-view:hover {
+    background-color: white;
+    color: var(--black)
+}
+
+.project-view:hover a {
+    color: var(--black);
+}
+
+
+/* slider  */
+
+.slider-container {
+    /* position: relative; */
+    max-width: 700px;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+    transition: border 0.2s;
+    border-width: 0;
+    margin-bottom: 10px;
+
+}
+
+.slide {
+
+    position: relative;
+    flex: 0 0 100%;
+    transition: transform 1s ease;
+
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.slide img:hover {
+    transform: scale(1.1);
+    padding-bottom: 10px;
+}
+
+.slide h5 {
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.slide p {
+    color: var(--paragraph-gray);
+    padding: 0;
+    margin: 0 0 5px 0;
+
+
+}
+
+.slider-container button {
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 50px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.slider-container:hover .slider {
+    border-bottom: 3px solid var(--primary);
+}
+
+.slider-container button:hover {
+    color: var(--primary);
+}
+
+.prev-slide {
+    left: 0;
+}
+
+.next-slide {
+    right: 0;
+    margin-left: 20px;
+}
+
+/* ----------------------------- Projects Section End ---------------------------- */
+
+/* ----------------------------- CTA Section STart ------------------------------- */
+
+.cta-container {
+    background: radial-gradient(#0f4163 5%, var(--secondary-dark) 95%);
+}
+
+.cta-bg {
+    background-image: url(img/background-transparent-img.svg);
+    background-position: 20% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cta-data {
+    padding: 0 15px;
+    margin: 0 120px;
+    text-align: center;
+    padding-top: 70px;
+
+}
+
+.cta-heading {
+    color: var(--white);
+    font-size: 100px;
+    line-height: 1em;
+    font-weight: 700;
+
+}
+
+.cta-heading span {
+
+    background-image: url(img/underline.svg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.cta-data p {
+
+    color: var(--heading-light);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 200px;
+    margin: 20px 0;
+
+}
+
+.cta-data h3 {
+    display: inline-block;
+    background-color: var(--primary);
+    padding: 30px;
+    color: var(--light-gray);
+    margin: 20px;
+    text-align: center;
+    border-radius: 45px;
+    transition: background 1s;
+    transition: color 1s;
+}
+
+.cta-data h3:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.cta-image-gallery {
+    overflow: hidden;
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.cta-image-gallery img {
+    transform: rotate(12deg);
+    margin-top: 60px;
+    border-radius: 35px;
+    margin-bottom: -55px;
+
+}
+
+/* ----------------------------- CTA Section End --------------------------------- */
+/* ----------------------------- Footer Section End ------------------------------ */
+footer {
+    background-color: var(--secondary-dark);
+}
+
+.footer-wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 150px;
+}
+
+.footer-wrapper a,
+.footer-wrapper h5,
+.footer-wrapper address,
+.footer-wrapper i {
+    color: var(--white);
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+}
+
+.footer-wrapper h5 {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.footer-wrapper a {
+    text-decoration: none;
+
+}
+
+.footer-logo img {
+    width: 150px;
+    max-width: 110%;
+    height: 100%;
+    color: var(--white);
+}
+
+.footer-company-address,
+.footer-logo {
+    padding-bottom: 20px;
+}
+
+.footer-social-icons-wrapper i,
+.email a {
+    transition: color 1s;
+    transition: font-size 0.3s ease;
+}
+
+
+
+.email:hover {
+    color: var(--primary);
+    font-size: 1.01em;
+}
+
+
+.footer-social-icons-wrapper i:hover {
+    color: var(--primary);
+    font-size: 1.3em;
+}
+
+.footer-social-icons-wrapper {
+    display: flex;
+}
+
+.footer-social-icons-wrapper i {
+    font-size: 1.2em;
+    display: inline;
+
+}
+
+.footer-company-address span {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-top: 1em;
+}
+
+
+.footer-company a,
+.footer-resources a,
+.footer-services a {
+    display: block;
+}
+
+
+/* ----------------------------- Footer Section End ------------------------------ */
+
+
+
+
+/* ----------------------------- Responsiveness ----------------------------------- */
+
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .nav-container {
+        padding-left: 10px;
+    }
+
+    .nav-logo img {
+        width: 100px;
+    }
+
+    .nav-menu ul {
+        column-gap: 0px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 10px;
+    }
+
+    .nav-wraper {
+
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .banner-container h1 {
+        font-size: 2rem;
+    }
+
+    .banner-container p {
+        font-size: 0.7rem;
+        letter-spacing: normal;
+    }
+
+    .banner-container h1,
+    p {
+        margin: 10px;
+        padding: 0px;
+    }
+
+    .banner-header {
+
+        padding: 45px;
+    }
+
+    .service-description h2 {
+        font-size: 1rem;
+    }
+
+    .service-description p {
+        font-size: 0.5rem;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .service-description {
+        padding: 33px 22px;
+    }
+
+    .include-img img {
+
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .service-include {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .service-include ul {
+        margin-left: -230px;
+    }
+
+    aside ul li {
+        padding: 15px 0px 0px 0;
+        font-size: 0.6em;
+
+    }
+
+    aside ul li::before {
+
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        left: -27px;
+        top: 21px;
+    }
+
+    .benefits h2 {
+        font-size: 30px;
+    }
+
+    .working-title h2 {
+        font-size: 2rem;
+        padding-left: 7px;
+    }
+
+    .working-container {
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .bg-box:nth-child(odd) {
+        position: relative;
+        bottom: 31px;
+        right: -32px;
+    }
+
+    .box h2 {
+        font-size: 2rem;
+        margin: 2px;
+    }
+
+    .box h3 {
+        font-size: 1rem;
+        margin: 10px 0px 10px;
+    }
+
+    .box p {
+
+        font-size: 11px;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .bg-box {
+        width: 200px;
+        height: 200px;
+        margin: 37px;
+    }
+
+    .project-work h2 {
+        font-size: 2rem;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-view {
+
+        margin: 35px 0;
+
+    }
+
+    .slide h5 {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    .slide p {
+        font-size: 0.8em;
+    }
+
+    .fa-arrow-circle-left:before,
+    .fa-circle-arrow-left:before {
+        font-size: 0.7em;
+    }
+
+    .fa-arrow-circle-right:before,
+    .fa-circle-arrow-right:before {
+        content: "\f0a9";
+        font-size: 0.7em;
+    }
+
+    .slider-container {
+        margin: -20px;
+    }
+
+    .cta-heading {
+        font-size: 40px;
+
+    }
+
+    .cta-data p {
+
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .cta-data h3 {
+
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    .cta-image-gallery {
+        margin: 20px;
+    }
+
+    .cta-image-gallery {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .cta-image-gallery img {
+        margin-bottom: 0px;
+        width: 90%;
+    }
+
+    .footer-wrapper {
+        padding: 26px 40px;
+        flex-direction: column;
+    }
+
+    .footer-logo img {
+        width: 190px;
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .nav-container {
+        padding-left: 15px;
+    }
+
+    .nav-menu ul {
+        column-gap: 0px;
+    }
+
+    .fa-arrow-right-long:before,
+    .fa-long-arrow-right:before {
+        font-size: 20px;
+    }
+
+    .nav-wraper {
+        padding: 19px 38px;
+        font-size: 15px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 14px;
+    }
+
+    .banner-header {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+
+    .banner-container h1 {
+        font-size: 2rem;
+        font-weight: 200;
+    }
+
+    .banner-container p {
+        font-size: 1rem;
+    }
+
+    .service-description {
+        padding: 62px 70px;
+    }
+
+    .service-description h2 {
+        font-size: 2rem;
+    }
+
+    .service-description p {
+        font-size: 0.9rem;
+    }
+
+    .service-include {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .include-img img {
+        margin: 0px 35px 20px 35px;
+    }
+
+    aside ul li::before {
+        left: -55px;
+    }
+
+    aside ul li {
+        margin-left: -170px;
+    }
+
+    .working-title h2 {
+        font-size: 2.4rem;
+    }
+
+    .working-container {
+
+        flex-direction: column;
+    }
+
+    .bg-box:nth-child(odd) {
+        right: -43px;
+    }
+
+    .bg-box {
+        margin: 39px;
+    }
+
+    .project-work h2 {
+        font-size: 2rem;
+    }
+
+    .slide h5 {
+        font-size: 1rem;
+    }
+
+    .fa-solid,
+    .fas {
+
+        font-size: 2rem;
+    }
+
+    .cta-heading {
+        font-size: 55px;
+    }
+
+    .cta-data p {
+        padding: 10px 0px;
+    }
+
+    .cta-data h3 {
+
+        padding: 19px;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .cta-image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-image-gallery img {
+        width: 650px;
+    }
+
+    .footer-wrapper {
+        padding: 40px 37px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-logo img {
+        width: 120px;
+    }
+
+    .service-description {
+        padding: 63px 70px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 21px;
+    }
+
+    .nav-menu ul {
+        column-gap: 20px;
+    }
+
+    .nav-wraper {
+        padding: 35px 21px;
+    }
+
+    .include-img img {
+
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .working-container {
+
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 80px;
+    }
+
+    .box-container {
+        justify-content: center;
+    }
+
+    .footer-wrapper {
+        padding: 34px 18px;
+    }
+
+    .banner-header {
+        padding-top: 132px;
+        padding-bottom: 120px;
+    }
+
+
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .box-container {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+    }
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {}
