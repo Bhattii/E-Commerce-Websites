@@ -316,6 +316,7 @@ aside ul li::before {
 /* ------------------------------ Service Section End ---------------------- */
 
 /* ------------------------------ Background Working Process Section  Start -------------------- */
+<<<<<<< HEAD
 .bg-working-process {
     background-image: url(img/background-working-process.svg);
     background-position: 50% 0;
@@ -1139,3 +1140,22 @@ footer {
 
     /* Extra large devices (large desktops, 1200px and up) */
     @media (min-width: 1200px) {}
+=======
+
+.bg-working-container {
+    background-color: var(--secondary-dark);
+    background-image: url(img/background-working-process.svg);
+    display: flex;
+
+}
+
+.bg-working-title h2 {
+    color: var(--white);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------ Background Working Process Section  End ---------------------- */
+>>>>>>> d0647ae2a6dc64666ab4c426147e5b6cef7cece5
